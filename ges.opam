@@ -1,1 +1,20 @@
-name: "GES"
+opam-version: "2.0"
+name: "ges"
+version: "0.1.0"
+maintainer: "Manas <prometheansacrifice@gmail.com>"
+authors: "Manas <prometheansacrifice@gmail.com>"
+synopsis: "Bindings for GES"
+description: "Bindings for GES"
+homepage: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
+bug-reports: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
+license: "GPL3"
+dev-repo: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
+build: [
+  ["dune" "build" "-p" name "-j" jobs "--profile" "production"]
+  ["exit 0"]
+]
+depends: [
+  "dune" {build}
+  "gi-bindings-generator" {build}
+  "gobject-introspection" {build}
+]
