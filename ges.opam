@@ -5,10 +5,10 @@ maintainer: "Manas <prometheansacrifice@gmail.com>"
 authors: "Manas <prometheansacrifice@gmail.com>"
 synopsis: "Bindings for GES"
 description: "Bindings for GES"
-homepage: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
-bug-reports: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
+homepage: "https://github.com/prometheansacrifice/ges-bindings-ocaml"
+bug-reports: "https://github.com/prometheansacrifice/ges-bindings-ocaml"
 license: "GPL3"
-dev-repo: "git@github.com:prometheansacrifice/ges-bindings-ocaml.git"
+dev-repo: "git+https://github.com/prometheansacrifice/ges-bindings-ocaml"
 build: [
   ["dune" "build" "-p" name "-j" jobs "--profile" "production"]
   ["exit 0"]
