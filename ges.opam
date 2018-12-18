@@ -10,7 +10,7 @@ bug-reports: "https://github.com/prometheansacrifice/ges-bindings-ocaml"
 license: "GPL3"
 dev-repo: "git+https://github.com/prometheansacrifice/ges-bindings-ocaml"
 build: [
-  ["dune" "build" "-p" name "-j" jobs "--profile" "production"]
+  ["dune" "build" "-j" jobs "--profile" "production"]
   ["exit 0"]
 ]
 depends: [
