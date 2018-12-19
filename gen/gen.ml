@@ -18,8 +18,10 @@ let files_suffix = "Raw"
 
 (** Instead of generate all the data structures (and theirs related methods or
  *  constants), the idea is to choose what is needed. *)
+
+let gst_data_structures = [ "Discoverer"; "Element"; "TimedValueControl" ]
 let data_structures =
-  ["Error"; "Layer";]
+  ["Timeline"; "Pipeline"; "Track"; "Layer"; "Clip"; "Container"; "Effect"; "TrackElement" ]
 
 (** One can choose to skip the bindings of some constants because they are not
  *  needed or because you want to create manually the bindings in the "Core.ml"

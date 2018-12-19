@@ -1,5 +1,5 @@
 (rule
- (targets Layer.mli Layer.ml Error.ml Error.mli)
+ (targets Asset.ml Asset.mli)
  (deps    ../gen/gen.exe)
  (action  (run %{deps} -o %{targets})))
 
