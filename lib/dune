@@ -1,6 +1,5 @@
 (rule
- (targets Asset.mli Asset.ml
-          Timeline.mli Timeline.ml
+ (targets Timeline.mli Timeline.ml
           Pipeline.mli Pipeline.ml
           Track.mli Track.ml
           Layer.mli Layer.ml)
