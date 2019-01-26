@@ -18,8 +18,20 @@ let files_suffix = "Raw"
 
 (** Instead of generate all the data structures (and theirs related methods or
  *  constants), the idea is to choose what is needed. *)
+
 let data_structures =
-  ["Error"; "Layer"; "Timeline";]
+  [ "PipelineFlags"; "Container"; "Effect"; "VideoTrack"; "AudioTrack"; "UriClip" ]
+  (* @
+   *   [
+   *     "Asset";       
+   *     "Clip";
+   *     "Layer";
+   *     "Pipeline";
+   *     "TimelineElement";
+   *     "TrackElement";
+   *     "Track";
+   *     "Timeline";
+   *   ] *)
 
 (** One can choose to skip the bindings of some constants because they are not
  *  needed or because you want to create manually the bindings in the "Core.ml"
@@ -28,7 +40,7 @@ let const_to_skip = ["MAJOR_VERSION"; "MINOR_VERSION"; "MICRO_VERSION"]
 
 (** Like for the data_structures, you have to choose with function should have
  *  its bindings generated. *)
-let functions = []
+let functions = ["init"]
 
 let sources = Loader.generate_files ("Core" ^ files_suffix)
 

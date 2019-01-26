@@ -1,23 +1,36 @@
 (rule
- (targets Layer.mli Layer.ml Error.ml Error.mli Timeline.ml Timeline.mli)
+ (targets
+
+  ;; Clip.mli Clip.ml
+  ;; Layer.mli Layer.ml
+  ;; Pipeline.mli Pipeline.ml
+  ;; Timeline_element.mli Timeline_element.ml
+  ;; Track_element.mli Track_element.ml
+  ;; Track.mli Track.ml
+  Pipeline_flags.mli Pipeline_flags.ml
+  Core_raw.mli Core_raw.ml
+  ;; Timeline.mli Timeline.ml
+  ;; Asset.mli Asset.ml
+  Audio_track.mli Audio_track.ml
+  Video_track.mli Video_track.ml
+  Uri_clip.mli Uri_clip.ml)
  (deps    ../gen/gen.exe)
  (action  (run %{deps} -o %{targets})))
 
 (rule
  (targets c_flags.sexp
-            c_library_flags.sexp)
+          c_library_flags.sexp
+          ccopts.sexp)
   (deps    ../configurator/discover.exe)
   (action  (run %{deps})))
 
-
-
-
 (library
- (name        GES)
-  (public_name ges)
-  (libraries ctypes ctypes.foreign)
+ (name        GstEditingServices)
+  (public_name gst-editing-services)
+  (libraries ctypes ctypes.foreign gi-glib2 gstreamer)
   (c_names         dyn_load_constants_stubs)
   (c_flags         (:include c_flags.sexp))
   (c_library_flags (:include c_library_flags.sexp))
-  (ocamlopt_flags (-ccopt ("-Wl,-no-as-needed")))
+  (flags -open GLib -open Gstreamer)
+  (ocamlopt_flags (-ccopt (:include ccopts.sexp)))
  )
