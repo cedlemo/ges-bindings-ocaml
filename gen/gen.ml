@@ -20,11 +20,12 @@ let files_suffix = "Raw"
  *  constants), the idea is to choose what is needed. *)
 
 let data_structures =
-  [ "PipelineFlags"; "Container"; "Effect"; "VideoTrack"; "AudioTrack"; "UriClip" ]
+  [ "PipelineFlags"; "Effect"; "VideoTrack"; "AudioTrack"; "UriClip"; "EditMode" ]
   (* @
    *   [
    *     "Asset";       
    *     "Clip";
+   *     "Container";
    *     "Layer";
    *     "Pipeline";
    *     "TimelineElement";

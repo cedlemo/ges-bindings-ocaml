@@ -8,7 +8,10 @@
   ;; Track_element.mli Track_element.ml
   ;; Track.mli Track.ml
   Pipeline_flags.mli Pipeline_flags.ml
+  ;; Container.mli Container.ml
   Core_raw.mli Core_raw.ml
+  Edit_mode.mli Edit_mode.ml
+  Edge.mli Edge.ml
   Effect.mli Effect.ml
   ;; Timeline.mli Timeline.ml
   ;; Asset.mli Asset.ml
