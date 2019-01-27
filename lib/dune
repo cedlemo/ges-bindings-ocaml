@@ -9,6 +9,7 @@
   ;; Track.mli Track.ml
   Pipeline_flags.mli Pipeline_flags.ml
   Core_raw.mli Core_raw.ml
+  Effect.mli Effect.ml
   ;; Timeline.mli Timeline.ml
   ;; Asset.mli Asset.ml
   Audio_track.mli Audio_track.ml
