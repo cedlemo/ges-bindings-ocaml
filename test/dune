@@ -1,4 +1,0 @@
-(executables
-(names TestBindings)
-(public_names TestBindings.exe)
-(libraries gst-editing-services))
