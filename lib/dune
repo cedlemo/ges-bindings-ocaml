@@ -30,7 +30,7 @@
 
 (library
  (name        GstEditingServices)
-  (public_name gst-editing-services)
+  (public_name gi-gst-editing-services)
   (libraries ctypes ctypes.foreign gi-glib2 gstreamer)
   (c_names         dyn_load_constants_stubs)
   (c_flags         (:include c_flags.sexp))

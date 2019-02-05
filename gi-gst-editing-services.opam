@@ -1,5 +1,5 @@
 opam-version: "1.2"
-name: "gst-editing-services"
+name: "gi-gst-editing-services"
 version: "~unknown"
 maintainer: "Manas Jayanth<prometheansacrifice@gmail.com>"
 authors: "Manas Jayanth <prometheansacrifice@gmail.com>"
