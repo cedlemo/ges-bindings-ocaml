@@ -29,6 +29,7 @@ let data_structures =
    *     "Layer";
    *     "Pipeline";
    *     "TimelineElement";
+   *     "TitleClip";
    *     "TrackElement";
    *     "Track";
    *     "Timeline";
