@@ -10,16 +10,16 @@ val t_typ : t typ
  *   t -> Hash_table.t.t structure (\* string *\) ptr *)
 (* val get_control_binding :
  *   t -> string -> Control_binding.t ptr option *)
-(* val get_element :
- *   t -> Element.t ptr
- * val get_gnlobject :
- *   t -> Element.t ptr
- * val get_nleobject :
- *   t -> Element.t ptr *)
+val get_element :
+  t -> Element.t ptr
+val get_gnlobject :
+  t -> Element.t ptr
+val get_nleobject :
+  t -> Element.t ptr
 (* val get_track :
  *   t -> Track.t ptr option *)
-(* val get_track_type :
- *   t -> Track_type.t_list *)
+val get_track_type :
+  t -> Track_type.t_list
 val is_active :
   t ptr -> bool
 (*Not implemented ges_track_element_list_children_properties return type C Array type for Types.Array tag not handled*)
@@ -31,5 +31,5 @@ val set_active :
   t -> bool -> bool
 (* val set_control_source :
  *   t -> Control_source.t ptr -> string -> string -> bool *)
-(* val set_track_type :
- *   t -> Track_type.t_list -> unit *)
+val set_track_type :
+  t -> Track_type.t_list -> unit

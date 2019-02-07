@@ -11,16 +11,16 @@ let t_typ : t typ = ptr void
  *   foreign "ges_track_element_get_all_control_bindings" (t_typ @-> returning (ptr Hash_table.t.t_typ)) *)
 (* let get_control_binding =
  *   foreign "ges_track_element_get_control_binding" (t_typ @-> string @-> returning (ptr_opt Control_binding.t_typ)) *)
-(* let get_element =
- *   foreign "ges_track_element_get_element" (t_typ @-> returning (ptr Element.t_typ))
- * let get_gnlobject =
- *   foreign "ges_track_element_get_gnlobject" (t_typ @-> returning (ptr Element.t_typ))
- * let get_nleobject =
- *   foreign "ges_track_element_get_nleobject" (t_typ @-> returning (ptr Element.t_typ)) *)
+let get_element =
+  foreign "ges_track_element_get_element" (t_typ @-> returning (ptr Element.t_typ))
+let get_gnlobject =
+  foreign "ges_track_element_get_gnlobject" (t_typ @-> returning (ptr Element.t_typ))
+let get_nleobject =
+  foreign "ges_track_element_get_nleobject" (t_typ @-> returning (ptr Element.t_typ))
 (* let get_track =
  *   foreign "ges_track_element_get_track" (t_typ @-> returning (ptr_opt Track.t_typ)) *)
-(* let get_track_type =
- *   foreign "ges_track_element_get_track_type" (t_typ @-> returning (Track_type.t_list_view)) *)
+let get_track_type =
+  foreign "ges_track_element_get_track_type" (t_typ @-> returning (Track_type.t_list_view))
 let is_active =
   foreign "ges_track_element_is_active" (ptr t_typ @-> returning (bool))
 (*Not implemented ges_track_element_list_children_properties return type C Array type for Types.Array tag not handled*)
@@ -40,5 +40,5 @@ let set_active =
   foreign "ges_track_element_set_active" (t_typ @-> bool @-> returning (bool))
 (* let set_control_source =
  *   foreign "ges_track_element_set_control_source" (t_typ @-> ptr Control_source.t_typ @-> string @-> string @-> returning (bool)) *)
-(* let set_track_type =
- *   foreign "ges_track_element_set_track_type" (t_typ @-> Track_type.t_list_view @-> returning (void)) *)
+let set_track_type =
+  foreign "ges_track_element_set_track_type" (t_typ @-> Track_type.t_list_view @-> returning (void))
