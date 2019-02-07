@@ -16,6 +16,7 @@
   ;; Timeline.mli Timeline.ml
   ;; Asset.mli Asset.ml
   Audio_track.mli Audio_track.ml
+  Track_type.mli Track_type.ml
   Video_track.mli Video_track.ml
   Uri_clip.mli Uri_clip.ml)
  (deps    ../gen/gen.exe)
